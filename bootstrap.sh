@@ -20,7 +20,7 @@ rsync --exclude ".git/" \
 	-avh --no-perms . ~;
 
 # Configure macOS defaults
-./.macos
+# ./.macos
 
 # Install Homebrew formulae
 ./brew.sh
