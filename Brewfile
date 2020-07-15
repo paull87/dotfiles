@@ -4,22 +4,24 @@ tap "homebrew/cask-fonts"
 tap "homebrew/bundle"
 
 # Tools
+brew "antigen"
 brew "composer"
 brew "git"
 brew "grep"
 brew "httpie"
 brew "hub"
 brew "jq"
-brew "mas"
 brew "tldr"
 brew "wget"
 brew "zsh"
 
 # Development
-brew "python3"
 brew "node"
+brew "mysql", restart_service: true
 brew "php", restart_service: true
 brew "postgresql", restart_service: true
+brew "python"
+brew "python3"
 brew "redis", restart_service: true
 brew "ruby"
 
