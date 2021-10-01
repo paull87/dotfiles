@@ -2,47 +2,56 @@
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/bundle"
+tap "nicoverbruggen/cask"
+tap "shivammathur/php"
 
 # Tools
 brew "antigen"
-brew "composer"
-brew "git"
-brew "grep"
+brew "coreutils"
+brew "findutils"
 brew "httpie"
-brew "hub"
 brew "jq"
+brew "nmap"
+brew "thefuck"
 brew "tldr"
 brew "wget"
+brew "youtube-dl"
 brew "zsh"
 
 # Development
-brew "node"
-brew "mysql", restart_service: true
-brew "php", restart_service: true
-brew "postgresql", restart_service: true
+brew "gh"
+brew "git"
+cask "docker"
+cask "phpmon"
+cask "phpstorm"
+cask "postico"
+cask "tinkerwell"
+cask "visual-studio-code"
+
+# Languages
 brew "python"
-brew "python3"
-brew "redis", restart_service: true
 brew "ruby"
 
 # Apps
 cask "1password"
 cask "aerial"
 cask "alfred"
-cask "docker"
-cask "firefox"
-cask "hyper"
-cask "slack"
+cask "iterm2"
 cask "keybase"
-cask "notion"
-cask "phpstorm"
-cask "postico"
 cask "rectangle"
-cask "sequel-pro"
-cask "sketch"
 cask "spotify"
-cask "visual-studio-code"
+
+# Communication
 cask "whatsapp"
+
+# Work
+cask "linear-linear"
+cask "notion"
+cask "slack"
+
+# Browsers
+cask "firefox"
+cask "microsoft-edge"
 
 # Fonts
 cask "font-fira-code"
