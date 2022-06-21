@@ -15,7 +15,6 @@ brew "nmap"
 brew "thefuck"
 brew "tldr"
 brew "wget"
-brew "youtube-dl"
 brew "zsh"
 
 # Development
@@ -28,16 +27,18 @@ cask "postico"
 cask "tinkerwell"
 cask "visual-studio-code"
 
+# Jetbrains
+cask "jetbrains-toolbox"
+
 # Languages
 brew "python"
+brew "php"
 brew "ruby"
 
 # Apps
 cask "1password"
-cask "aerial"
-cask "alfred"
+cask "1password-cli"
 cask "iterm2"
-cask "keybase"
 cask "rectangle"
 cask "spotify"
 
@@ -51,7 +52,10 @@ cask "slack"
 
 # Browsers
 cask "firefox"
-cask "microsoft-edge"
 
 # Fonts
 cask "font-fira-code"
+
+# Leisure
+cask "rekordbox"
+cask "mixed-in-key"
