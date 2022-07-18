@@ -52,10 +52,36 @@ defaults write -g KeyRepeat -int 1
 defaults write -g InitialKeyRepeat -int 10
 
 ###############################################################################
+# Mail                                                                        #
+###############################################################################
+
+# Copy email addresses as `foo@example.com` instead of `Foo Bar <foo@example.com>` in Mail.app
+defaults write com.apple.mail AddressesIncludeNameOnPasteboard -bool false
+
+# Disable inline attachments (just show the icons)
+defaults write com.apple.mail DisableInlineAttachmentViewing -bool true
+
+# Show most recent message at the top in conversations
+defaults write com.apple.mail ConversationViewSortDescending -bool true
+
+###############################################################################
+# Calendar                                                                    #
+###############################################################################
+
+# Show week numbers (10.8 only)
+defaults write com.apple.iCal "Show Week Numbers" -bool true
+
+# Show events in year view
+defaults write com.apple.iCal "Show heat map in Year View" -bool true
+
+# Turn on time zone support
+defaults write com.apple.iCal "TimeZone support enabled" -bool true
+
+###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
 
-for app in "Dock"; do
+for app in "Dock" "Mail" "Calendar"; do
 	killall "${app}" &> /dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."

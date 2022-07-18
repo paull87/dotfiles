@@ -1,6 +1,11 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/.composer/vendor/bin:$HOME/.yarn/bin:$PATH
 
+for file in ~/.{aliases,path}.sh; do
+    [ -r "$file " ] && [ -f "$file" ] && source "$file";
+done;
+unset file;
+
 source /usr/local/share/antigen/antigen.zsh
 
 antigen use oh-my-zsh

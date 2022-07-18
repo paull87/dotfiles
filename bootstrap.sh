@@ -12,13 +12,17 @@ rsync --exclude ".git/" \
 	--exclude ".DS_Store" \
 	--exclude "bootstrap.sh" \
 	--exclude "brew.sh" \
-	--exclude ".macos" \
+	--exclude "macos.sh" \
+	--exclude "php.sh" \
 	--exclude "README.md" \
 	--exclude "LICENSE-MIT.txt" \
 	-avh --no-perms . ~;
 
 # Configure macOS defaults
-# ./.macos
+./macos.sh
 
 # Install Homebrew formulae
 ./brew.sh
+
+# Install PHP dependencies
+./php.sh
