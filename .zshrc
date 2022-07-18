@@ -6,7 +6,7 @@ for file in ~/.{aliases,path}.sh; do
 done;
 unset file;
 
-source /usr/local/share/antigen/antigen.zsh
+source $(brew --prefix)/share/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
