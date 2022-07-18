@@ -2,7 +2,7 @@
 export PATH=$HOME/.composer/vendor/bin:$HOME/.yarn/bin:$PATH
 
 for file in ~/.{aliases,path}.sh; do
-    [ -r "$file " ] && [ -f "$file" ] && source "$file";
+    [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
 
