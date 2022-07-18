@@ -12,6 +12,7 @@ rsync --exclude ".git/" \
 	--exclude ".DS_Store" \
 	--exclude "bootstrap.sh" \
 	--exclude "brew.sh" \
+	--exclude "git.sh" \
 	--exclude "macos.sh" \
 	--exclude "php.sh" \
 	--exclude "README.md" \
