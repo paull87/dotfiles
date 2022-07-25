@@ -4,14 +4,19 @@
 alias d="cd ~/Dev"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias s="cd ~/Superscript"
+alias cdr="cd ~/source/repos/"
+alias ..='cd ..'
+alias ...='cd ../../../'
+alias ....='cd ../../../../'
+alias .....='cd ../../../../'
+alias reload='source ~/.zshrc'
 
 # Develop
-alias art="php artisan"
-alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
+alias gs='git status'
+alias gcmp='gcm; git pull'
 
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
 # Get macOS Software Updates, and update installed Ruby gems, Homebrew, npm, and their installed packages
-alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup; npm install npm -g; npm update -g; composer global update'
+alias update='sudo softwareupdate -i -a; brew update; brew upgrade; brew cleanup'

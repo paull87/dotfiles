@@ -24,6 +24,3 @@ rsync --exclude ".git/" \
 
 # Install Homebrew formulae
 ./brew.sh
-
-# Install PHP dependencies
-./php.sh
